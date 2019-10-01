@@ -1,4 +1,10 @@
+# 3D Transforms Intro
+
+Playground Repo for examples from David DeSandro's excellent [CSS 3D transforms guide](https://3dtransforms.desandro.com/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This repo includes implementations of TypeScript, ESLint + Prettier, Storybook, Styled Components and React Testing Library.
 
 ## Available Scripts
 
