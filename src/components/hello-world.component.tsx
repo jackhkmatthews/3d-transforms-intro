@@ -1,7 +1,8 @@
 import React from "react";
+import * as S from "./hello-world.styles";
 
 const HelloWorld: React.FC = () => {
-  return <h1>Hello World</h1>;
+  return <S.HelloWorld>Hello World</S.HelloWorld>;
 };
 
 export default HelloWorld;
