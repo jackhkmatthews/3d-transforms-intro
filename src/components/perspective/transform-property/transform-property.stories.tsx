@@ -26,28 +26,6 @@ storiesOf("Perspective", module)
           },
           "transform"
         )}
-        perspectiveOriginX={number(
-          "perspectiveOriginX",
-          50,
-          {
-            range: true,
-            min: 0,
-            max: 100,
-            step: 1
-          },
-          "perspective-origin"
-        )}
-        perspectiveOriginY={number(
-          "perspectiveOriginY",
-          50,
-          {
-            range: true,
-            min: 0,
-            max: 100,
-            step: 1
-          },
-          "perspective-origin"
-        )}
         perspective={number(
           "perspective",
           500,
