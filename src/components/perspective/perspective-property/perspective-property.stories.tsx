@@ -3,18 +3,18 @@ import * as React from "react";
 import styled from "styled-components";
 import { number, withKnobs } from "@storybook/addon-knobs";
 
-import Perspective from "./perspective.component";
+import PerspectiveProperty from "./perspective-property.component";
 
 const Container = styled.div`
-  margin: 100px;
+  margin: 50px;
   display: inline-block;
 `;
 
 storiesOf("Perspective", module)
   .addDecorator(withKnobs)
-  .add("default", () => (
+  .add("PerspectiveProperty", () => (
     <Container>
-      <Perspective
+      <PerspectiveProperty
         rotateY={number(
           "rotateY",
           45,
@@ -36,6 +36,28 @@ storiesOf("Perspective", module)
             step: 10
           },
           "transforms"
+        )}
+        perspectiveOriginX={number(
+          "perspectiveOriginX",
+          50,
+          {
+            range: true,
+            min: 0,
+            max: 100,
+            step: 1
+          },
+          "perspective-origin"
+        )}
+        perspectiveOriginY={number(
+          "perspectiveOriginY",
+          50,
+          {
+            range: true,
+            min: 0,
+            max: 100,
+            step: 1
+          },
+          "perspective-origin"
         )}
       />
     </Container>
