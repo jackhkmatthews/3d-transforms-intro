@@ -1,6 +1,6 @@
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { number, withKnobs } from "@storybook/addon-knobs";
 
 import TransformFunctions3d from "./transform-functions-3d.component";
