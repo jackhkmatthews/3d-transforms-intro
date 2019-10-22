@@ -7,7 +7,9 @@ interface Props {
   boxWidth: number;
   frontFace: string;
 }
-const Cube: React.FC<Props> = ({ boxWidth, frontFace }: Props) => {
+const Cube: React.FC<Props> = (
+  { boxWidth, frontFace }: Props = { boxWidth: 200, frontFace: "front" }
+) => {
   return (
     <S.Scene boxWidth={boxWidth}>
       <S.Cube boxWidth={boxWidth} frontFace={frontFace}>
